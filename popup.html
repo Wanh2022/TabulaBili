@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TabulaBili-Plus 推荐设置</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-container">
+      <img src="icon48.png" alt="Logo" class="logo-img">
+    </div>
+    <div class="title-group">
+      <div class="title">TabulaBili-Plus</div>
+      <div class="subtitle">通过减少基于账号登录态和浏览历史的个性化推荐，让B站首页内容变得更泛化、更随机。</div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="card">
+      <div class="control-row">
+        <div class="label-group">
+          <span class="label-main">纯净访客模式</span>
+          <span class="label-badge" id="modeBadge">OFF</span>
+        </div>
+        <label class="switch" title="切换推荐模式">
+          <input type="checkbox" id="modeSwitch">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="status-panel">
+        <div class="status-desc" id="statusDesc">正在初始化规则状态...</div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="status-wrapper">
+        <div class="status-indicator" id="indicator"></div>
+        <div class="footer-text" id="footerText">等待扩展响应...</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/tjsky/TabulaBili/issues" target="_blank" class="footer-link" title="提交 Bug 或建议">🐛 反馈建议</a>
+        <a href="https://www.tjsky.net" target="_blank" class="footer-link" title="当前增强版 GitHub 仓库">💻 维护者主页</a>
+        <a href="https://wangdaodao.me/2026/tabulabili/" target="_blank" class="footer-link" title="原作者博客与创意来源">✨ 灵感来源</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
